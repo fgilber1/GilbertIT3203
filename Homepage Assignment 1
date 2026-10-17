@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="description" content="An informational website about the Hypertext Transfer Protocol (HTTP): how it works, how it evolved, and where it is headed.">
+    <title>HTTP: The WorldWide Language of the Web - Home</title>
+    <!-- CSS Stylesheet for website -->
+    <link rel="stylesheet" href="css/style.css">
+</head>   
+<body>
+
+    <!-- This section is for the header and main menu-->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Language of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section is for the main title, Intro, and Key Terms-->
+    <main id="content">
+        <section id="hero">
+            <h1>HTTP: The WorldWide Language of the Web</h1>
+            <p>HyperText Transfer Protocol(better known as HTTP) is the foundation of the World Wide Web. This application-level protocol is designed to transfer/communicate information between web clients and servers.</p>
+            <h2 class="hero-heading">Introduction</h2>
+            <p>The purpose of this website is to provide in-depth information on the Hypertext Transfer Protocol for those who aim to have a deeper understanding of HTTP.</p>
+            <h2 class="hero-heading">Key Terms to Remember</h2>
+            <ul class="key-terms-to-remember">
+                <li>HTTP</li><li>HTTPS</li><li>Web clients</li><li>Web server</li><li>HTTP request</li><li>HTTP response</li>
+                <li>TCP</li><li>QUIC</li><li>TLS</li>
+            </ul>
+        </section>
+
+        <!-- Table of Contents section-->
+        <h2>Table of Contents</h2>
+        <div class="card-grid">
+            <article class="card">
+                <h3><a href="learning-http.html">Learning HTTP</a></h3>
+                <p>Defines and describes HyperText Transfer Protocol in detail</p>
+            </article>
+            <article class="card">
+                <h3><a href="http-evolution.html">HTTP Evolution</a></h3>
+                <p>Deep dives into history and evolution of HyperText Transfer Protocol</p>
+            </article>
+            <article class="card">
+                <h3><a href="key-concepts.html">Key Concepts</a></h3>
+                <p>Definitions of the seven key concepts</p>
+            </article>
+            <article class="card">
+                <h3><a href="references.html">References</a></h3>
+                <p>Provides sources used in research</p>
+            </article>
+            <article class="card">
+                <h3><a href="about-me">About Me</a></h3>
+                <p>More information about the author of the website</p>
+            </article>
+        </div>
+    </main>
+
+    <!--Section for the footer that includes link to class-->
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body> 
+</html> 

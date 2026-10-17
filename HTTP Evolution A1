@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="description" content="Deep dive into the history and evolution of HyperTezt Transfer Protocol.">
+    <title>HTTP Evolution</title>
+
+    <!--CSS stylesheet for whole website-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Langauge of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of HTTP Evolution -->
+    <main id="content">
+        <h1>HTTP Evolution</h1>
+        <p class="page-intro">HTTP has evolved from the first prototype in 1991, to the current HTTP/2 and HTTP/3 by improving and releasing better versions as the years passed.</p>
+        <h2>Origin</h2>
+        <p>Tim Berners-Lee is credited as the designer of the original HTTP proposal. He designed HTTP with simplicity in mind to help establish his idea of the World Wide Web. In 1991, the first prototype of HTTP was built and had the following functionalities:</p>
+        <ul>
+            <li>Client request is a single ASCII character string.</li>
+            <li>Client request is terminated by a single carriage return.</li>
+            <li>Server response is an ASCII character stream.</li>
+            <li>Server response is a hypertext markup language(HTML).</li>
+            <li>Connection is terminated after the document transfer is complete.</li>
+        </ul>
+
+        <h3>HTTP/0.9 Limitations</h3>
+        <p>As HTTP/0.9 was the first version, there were limitations to its functionality:</p>
+        <ul>
+            <li>No headers were availabe.</li>
+            <li>No status codes, so errors were not signaled.</li>
+            <li>Only had the GET method.</li>
+            <li>No images, CSS, or scripts.</li>
+            <li>A new TCP connection was needed for every single request.</li>
+        </ul>
+
+        <h3>HTTP/1.0 (1996)</h3>
+        <p>Key changes occurred with the release of HTTP/1.0:</p>
+        <ul>
+            <li>Request can consist of multiple newline-separated header fields.</li>
+            <li>The response object is prefixed with a response status line.</li>
+            <li>Response object has its own set of newline-separated header fields.</li>
+            <li>Response ibject is not limited to hypertext.</li>
+            <li>The connection between server and client is closed after every request.</li>
+        </ul>
+
+        <h3>HTTP/1.1 (1997&ndash;1999)</h3>
+        <p>Introduced critical performance optimizations that included keepalive connections, chunked encoding transfers, byte-range requests, additional caching mechanisms, transfer encodings, and request pipelining.</p>
+
+        <h3>HTTP/2 (2015)</h3>
+        <p>How HTTP/2 evolved from HTTP/1.1:</p>
+        <ul>
+            <li>It is a binary protocol rather than a text protocol, and allows for the implementation of improved optimization techniques.</li>
+            <li>HTTP/2 is a multiplexed protocol, and parallel requests can be made over the same connection. This removed the constraints of the HTTP/1.0 protocol.</li>
+            <li>It compresses headers since they are often similar among a set of requests. This compression removes the duplication and overhead of data transmitted.</li>
+        </ul>
+
+        <h3>HTTP/3 (2022)</h3>
+        <p>A major change with HTTP/3 is the switch in the transport layer protocol. The predecessors used TCP as their transport layer protocol, but HTTP/3 usess QUIC (Quick UDP Internet Connection). Improvements to speed and reliability result from the change. Other key features of HTTP/3 include:</p>
+        <ul>
+            <li>Faster connection setup with QUIC using 0-RTT and 1-RTT handshakes to reduce delay.</li>
+            <li>Built-in encryption.</li>
+            <li>No Head-ofLine blocking at the transport layer.</li>
+        </ul>
+
+        <nav class="page-pager" aria-label="Page navigation">
+            <a href="learning-http.html">&larr; Learning HTTP</a>
+            <a href="key-concepts.html">Key Concepts &rarr;</a>
+        </nav>
+    </main>
+
+        <!--class link-->
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>

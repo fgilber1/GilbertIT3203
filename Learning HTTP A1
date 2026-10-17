@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="description" content="Defining and describing what HTTP is.">
+    <title>Learning HTTP</title>
+
+    <!--CSS stylesheet for whole website-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Langauge of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Main content of HTTP definitions, etc-->
+    <main id="content">
+        <h1>Learning HTTP</h1>
+        <p class="page-intro">The foundation of data communication on the World Wide Web is the HyperText Transfer Protocol. HTTP generally communicates over the Transmission Control Protocol.</p>
+        <h2>HTTP Definition</h2>
+        <p>HyperText Transfer Protocol, also known as HTTP, is defined as a standard application-level protocol that is used for exchanging files on the World Wide Web.</p>
+        <h2>The Role and Purpose of HTTP</h2>
+        <p>HTTP is used as the foundational communication system to transfer data between web browsers (or clients) and web servers on the Internet. Though designed for communication between web servers, HTTP can also be used for other purposes, such as machine-to-machine communication and programmatic access to APIs.</p>
+
+        <h2>HTTP Requests</h2>
+        <p>HTTP requests are messages that are formatted in the HTTP protocol sent from a client to a server that is capable of responding. Requests can be formed by software, APIs, or libraries within an application such as web browsers and email clients. The syntax starts with the noun (which is data values expressed in the message header, options chosen, and body message values) followed by the verb (HTTP request method used, such as GET or POST) to complete the message.</p>
+        <h3>Components of HTTP Requests</h3>
+        <ul>
+            <li><strong>Request line:</strong> Includes the request method, the resource URL, and the HTTP version used. Plays a critical role in defining the type of request and the target resource.</li>
+            <li><strong>Headers:</strong> Metadata fields that provide additional information about the request. Headers may include details such as content type, authentication credentials, and user agent.</li>
+            <li><strong>Body:</strong> Used in methods that require data submissionm such as POST and PUT. Contains the transmitted data, which can be in formats such as JSON, XML, or form data.</li>
+        </ul>
+
+        <h3>Request Example</h3>
+<pre><code>GET /docs/tutorials/linux/shellscripts/howto.html HTTP/1.1
+Host: Linode.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.8) Gecko/20091102 Firefox/3.5.5
+Accept: text/html,application/xhtml+xml,
+Accept-Language: en-us
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8
+Cache-Control: no-cache</code></pre>
+
+        <h2>HTTP Methods</h2>
+        <p>Methods are used to retrieve, update, delete, or perform other actions on a resource.</p>
+
+        <h3>Method Examples</h3>
+        <!--Table for examples-->
+        <div class="table-wrap">
+            <table>
+                <caption>Table 1. Common HTTP methods</caption>
+                <thead>
+                    <tr><th scope="col">Method</th><th scope="col">Purpose</th><th scope="col">Has a body?</th><th scope="col">Idempotent?</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">GET</th><td>Retrieves data from a specified resource. Only reads data, so it is considered safe.</td><td>No</td><td>Yes</td></tr>
+                    <tr><th scope="row">POST</th><td>Sends new data to the server or starts a process. Repeating it can produce different results.</td><td>Yes</td><td>No</td></tr>
+                    <tr><th scope="row">PUT</th><td>Fully updates an existing resource, or creates it if it does not exist.</td><td>Yes</td><td>Yes</td></tr>
+                    <tr><th scope="row">DELETE</th><td>Removes the specified resource. Repeating the request causes no additional side effects.</td><td>Usually no</td><td>Yes</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>HTTP Responses</h2>
+        <p>A HyperText Transfer Protocol Response is sent by a server to a client. The purpose of HTTP Response is to provide the client with resources that were requested, or to inform the client that the action requested was completed. Response will also inform the client if the request had an error occur during processing.</p>
+        <h3>Response Example</h3>
+<pre><code>HTTP/1.1 200 OK
+Date: Mon, 27 Jul 2009 12:28:53 GMT
+Server: Apache/2.2.14 (Win32)
+Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+Content-Length: 88
+Content-Type: text/html
+Connection: Closed</code></pre>
+
+<!-- Ability to go to next page-->
+        <nav class="page-pager" aria-label="Page navigation">
+            <a href="homepage.html">&larr; Home</a>
+            <a href="http-evolution.html">HTTP Evolution &rarr;</a>
+        </nav>
+    </main>
+
+    <!--class link-->
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>

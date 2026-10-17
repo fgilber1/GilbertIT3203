@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="description" content="Provides resources used in research.">
+    <title>References</title>
+    <!-- CSS Stylesheet for whole website -->
+    <link rel="stylesheet" href="css/style.css">
+</head>   
+<body>
+
+    <!-- This section is for the header and main menu-->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Language of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <h1>References</h1>
+        <p class="page-intro">Websites from which the information was researched.</p>
+
+        <h2>Websites Used In Research</h2>
+        <ol class="reference-list">
+            <li>Mozilla. (2025, March 14). An overview of HTTP - HTTP | MDN. <i>MDN Web Docs</i>. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview</a></li>
+            <li>The Editors of Encyclopaedia Britannica. (2019). HTTP | computer science. In <i>Encyclopaedia Britannica</i>. <a href="https://www.britannica.com/technology/HTTP">https://www.britannica.com/technology/HTTP</a></li>
+            <li>CICS Transaction Server for z/OS 6.x. (2024, June 3). <i>IBM Documentation</i>. <a href="https://www.ibm.com/docs/en/cics-ts/6.x?topic=protocol-http-responses">https://www.ibm.com/docs/en/cics-ts/6.x?topic=protocol-http-responses</a></li>
+            <li>Grigorik, I. (2013, October 15). HTTP: Brief History of HTTP. <i>High Performance Browser Networking</i> (O'Reilly). <a href="https://hpbn.co/brief-history-of-http/">https://hpbn.co/brief-history-of-http/</a></li>
+            <li>Thomson, D. (2026, April 9). We analyzed HTTP protocol adoption in 2026: 27.8% of the web still runs HTTP/1.x. <i>TechnologyChecker.io</i>. <a href="https://technologychecker.io/blog/http-protocol-adoption">https://technologychecker.io/blog/http-protocol-adoption</a></li>
+            <li>GeeksforGeeks. (2024, March 18). What is HTTP/3? How it is different from HTTP/2? <i>GeeksforGeeks</i>. <a href="https://www.geeksforgeeks.org/computer-networks/what-is-http-3-how-it-is-different-from-http-2/">https://www.geeksforgeeks.org/computer-networks/what-is-http-3-how-it-is-different-from-http-2/</a></li>
+            <li>Hostiserver. (2025). In-depth analysis of HTTP/3 and its impact on web performance. <i>Hostiserver</i>. <a href="https://www.hostiserver.com/community/articles/in-depth-analysis-of-http3-and-Its-impact-on-web-performance">https://www.hostiserver.com/community/articles/in-depth-analysis-of-http3-and-Its-impact-on-web-performance</a></li>
+            <li>Dev Cookies. (2025, March 17). Deep dive into HTTP/3: The future of the web. <i>DEV Community</i>. <a href="https://dev.to/devcorner/deep-dive-into-http3-the-future-of-the-web-kjg">https://dev.to/devcorner/deep-dive-into-http3-the-future-of-the-web-kjg</a></li>
+            <li>linou518. (2026, March). HTTP/3 is at 35% adoption: You can't call QUIC a future technology anymore. <i>DEV Community</i>. <a href="https://dev.to/linou518/http3-is-at-35-adoption-you-cant-call-quic-a-future-technology-anymore-2ghm">https://dev.to/linou518/http3-is-at-35-adoption-you-cant-call-quic-a-future-technology-anymore-2ghm</a></li>
+            <li>Cloudflare. (2025). What is HTTPS? <i>Cloudflare</i>. <a href="https://www.cloudflare.com/learning/ssl/what-is-https/">https://www.cloudflare.com/learning/ssl/what-is-https/</a></li>
+            <li>Nursisman, I. (2025, February 27). The anatomy of HTTP requests: Structure, methods, and security. <i>Medium</i>. <a href="https://medium.com/@ilaydanursisman/the-anatomy-of-http-requests-structure-methods-and-security-5f3f762f97f8">https://medium.com/@ilaydanursisman/the-anatomy-of-http-requests-structure-methods-and-security-5f3f762f97f8</a></li>
+        </ol>
+
+        <nav class="page-pager" aria-label="Page navigation">
+            <a href="key-concepts.html">&larr; Key Concepts</a>
+            <a href="about-me.html">About Me &rarr;</a>
+        </nav>
+    </main>
+
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>

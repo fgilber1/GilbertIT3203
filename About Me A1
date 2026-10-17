@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="description" content="More information about the author of the website.">
+    <title>About Me</title>
+
+    <!--CSS stylesheet for whole website-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Langauge of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <h1>About</h1>
+        <p class="page-intro">Information about the author of the webpage and purpose of the website.</p>
+
+        <h2>About Me</h2>
+        <p>Hello, my name is Faith Gilbert and I am currently a Junior at Kennesaw State University. My major is in Information Technology with a concentration in Cyber Operations Security. I am working on getting certifications to help further my knowledge in the technology field for my career.</p>
+
+        <h2>Project Information</h2>
+        <p>The purpose of this project is to create a research website. The choice of research I chose to produce was about HyperText Transfer Protocol (HTTP). The project consists of three major milestones to complete, and as of October 18th, 2026, the first milestone has be accomplished.</p>
+
+        <nav class="page-pager" aria-label="Page navigation">
+            <a href="references.html">&larr; References</a>
+            <span></span>
+        </nav>
+    </main>
+
+    <!--class link-->
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="description" content="Definitions of the seven key concepts.">
+    <title>Key Concepts</title>
+
+    <!--CSS stylesheet for whole website-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-title" href="homepage.html">HTTP: The WorldWide Langauge of the Web</a>
+            <nav class="main-nav" aria-label="Main menu">
+                <ul>
+                    <li><a href="homepage.html" aria-current="page">Home</a></li>
+                    <li><a href="learning-http.html">Learning HTTP</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="key-concepts.html">Key Concepts</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <h1>Key Concepts</h1>
+        <p class="page-intro">Defines key terms that are used throughout the website.</p>
+
+        <h2>Seven Key Concepts</h2>
+        <div class="card-grid">
+            <article class="card concept-card">
+                <h3><span class="concept-number">1.</span> Client</h3>
+                <p>A client is a device or program that requests data or services (such as a web broswer or an app).</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">2.</span> Server</h3>
+                <p>A system that stores resources, manages data, and responds to client requests.</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">3.</span> Request</h3>
+                <p>HTTP Requests are structured messages that a client sends to a server to request a resource or trigger an action.</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">4.</span> Response</h3>
+                <p>HTTP Responses are responses to the clients that provide the resources it requested, or inform the client that the action requested has been completed or reached an error.</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">5.</span> Headers</h3>
+                <p>Key-value pairs that carry additional information about an HTTP request or response. Headers help the client and server understand how to process the request, response, and data that is being exchanged.</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">6.</span> TCP</h3>
+                <p>Stands for Transmission Control Protocol. A protocol that allows devices to communicate reliably over a network. TCP ensures that data reaches its destination correctly and in the correct order.</p>
+            </article>
+            <article class="card concept-card">
+                <h3><span class="concept-number">7.</span> QUIC</h3>
+                <p>QUIC is a transport layer network protocol that was designed to make web communication faster and more reliable. HTTP/3 uses QUIC for this faster connection setup, while older versions of HTTP use TCP.</p>
+            </article>
+        </div>
+
+        <nav class="page-pager" aria-label="Page navigation">
+            <a href="http-evolution.html">&larr; HTTP Evolution</a>
+            <a href="references.html">References &rarr;</a>
+        </nav>
+    </main>
+    <footer class="site-footer">
+        <p>This website is for a class project. <a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>
