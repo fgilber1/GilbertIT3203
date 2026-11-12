@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Self-assessment quiz on the information of HTTP.">
+  <title>Quiz - HTTP: The Language of the Web</title>
+
+  <!-- quiz stylesheet added to original website stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">HTTP: The Language of the Web</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="http-basics.html">HTTP Basics</a></li>
+          <li><a href="history-evolution.html">History &amp; Evolution</a></li>
+          <li><a href="http-security.html">HTTP Security</a></li>
+          <li><a href="key-concepts.html">Key Concepts</a></li>
+          <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <h1>HTTP Self-Assessment Quiz</h1>
+    <p class="page-intro">A 10 question quiz to evaluate the knowledge gained from this website. The time limit is 10 minutes, and to pass a grade of 70% or higher must be obtained.</p>
+
+    <!-- section to inform quiz parameters -->
+    <section id="start-panel" class="quiz-panel">
+      <h2>Before you begin</h2>
+      <ul>
+        <li>3 fill-in-the-blank, 4 single-answer multiple choice, 2 multi-select, and 1 drop-down question.</li>
+        <li>Each question is worth 10 points. Multi-select questions need <strong>every</strong> correct box (and no wrong ones).</li>
+        <li>The quiz will automatically submit itself when the 10-minute timer reaches zero.</li>
+      </ul>
+      <button type="button" id="start-btn" class="btn btn-primary">Start Quiz</button>
+    </section>
+
+    <section id="results" class="quiz-panel" aria-live="polite" tabindex="-1" hidden></section>
+
+    <!-- keeps time and progress updated -->
+    <div id="status-bar" class="status-bar" hidden>
+      <span>Time left: <strong id="timer" role="timer">10:00</strong></span>
+      <span>Answered: <strong id="progress">0 / 10</strong></span>
+    </div>
+
+    <form id="quiz-form" novalidate hidden>
+
+      <!-- Q1 is fill in the blank -->
+      <fieldset class="question" id="q1">
+        <legend><span class="q-num">1.</span> Fill in the blank. <span class="q-type">Fill-in</span></legend>
+        <p><label for="q1-input">The HTTP method used to retrieve data from a resource, without changing it, is ______.</label></p>
+        <input type="text" id="q1-input" name="q1" autocomplete="off" placeholder="Type your answer">
+      </fieldset>
+
+      <!-- Q2 is fill in the blank -->
+      <fieldset class="question" id="q2">
+        <legend><span class="q-num">2.</span> Fill in the blank <span class="q-type">Fill-in</span></legend>
+        <p><label for="q2-input">HTTP/3 uses a new transport protocol called ______ instead of TCP.</label></p>
+        <input type="text" id="q2-input" name="q2" autocomplete="off" placeholder="Type your answer">
+      </fieldset>
+
+      <!-- Q3 is fill in the blank -->
+      <fieldset class="question" id="q3">
+        <legend><span class="q-num">3.</span> Fill in the blank <span class="q-type">Fill-in</span></legend>
+        <p><label for="q3-input">HTTPS is HTTP secured by the encryption protocol ______ (a three-letter acronym).</label></p>
+        <input type="text" id="q3-input" name="q3" autocomplete="off" placeholder="Type your answer">
+      </fieldset>
+
+      <!-- Q4-Q7 are multiple choice -->
+      <fieldset class="question" id="q4">
+        <legend><span class="q-num">4.</span> Who designed the original HTTP proposal? <span class="q-type">Choose one</span></legend>
+        <label class="choice"><input type="radio" name="q4" value="a"> Vint Cerf</label>
+        <label class="choice"><input type="radio" name="q4" value="b"> Tim Berners-Lee</label>
+        <label class="choice"><input type="radio" name="q4" value="c"> Brendan Eich</label>
+        <label class="choice"><input type="radio" name="q4" value="d"> Dennis Ritchie</label>
+      </fieldset>
+
+      <fieldset class="question" id="q5">
+        <legend><span class="q-num">5.</span> Which HTTP version introduced multiplexed requests over a single connection? <span class="q-type">Choose one</span></legend>
+        <label class="choice"><input type="radio" name="q5" value="a"> HTTP/0.9</label>
+        <label class="choice"><input type="radio" name="q5" value="b"> HTTP/1.0</label>
+        <label class="choice"><input type="radio" name="q5" value="c"> HTTP/2</label>
+        <label class="choice"><input type="radio" name="q5" value="d"> HTTP/1.1</label>
+      </fieldset>
+
+      <fieldset class="question" id="q6">
+        <legend><span class="q-num">6.</span> Which HTTP method is <em>not</em> idempotent? <span class="q-type">Choose one</span></legend>
+        <label class="choice"><input type="radio" name="q6" value="a"> GET</label>
+        <label class="choice"><input type="radio" name="q6" value="b"> PUT</label>
+        <label class="choice"><input type="radio" name="q6" value="c"> DELETE</label>
+        <label class="choice"><input type="radio" name="q6" value="d"> POST</label>
+      </fieldset>
+
+      <fieldset class="question" id="q7">
+        <legend><span class="q-num">7.</span> In HTTPS, which key stays on the web server and decrypts information encrypted with the public key? <span class="q-type">Choose one</span></legend>
+        <label class="choice"><input type="radio" name="q7" value="a"> The private key</label>
+        <label class="choice"><input type="radio" name="q7" value="b"> The session cookie</label>
+        <label class="choice"><input type="radio" name="q7" value="c"> The user-agent key</label>
+        <label class="choice"><input type="radio" name="q7" value="d"> The public key</label>
+      </fieldset>
+
+      <!-- Q8-Q9 is multi-selection with checkboxes (more than one correct answer) -->
+      <fieldset class="question" id="q8">
+        <legend><span class="q-num">8.</span> Which of these were introduced in HTTP/1.1? <span class="q-type">Select all that apply.</span></legend>
+        <label class="choice"><input type="checkbox" name="q8" value="keepalive"> Keep-alive connections</label>
+        <label class="choice"><input type="checkbox" name="q8" value="chunked"> Chunked transfer encoding</label>
+        <label class="choice"><input type="checkbox" name="q8" value="binary"> A binary (not text) protocol</label>
+        <label class="choice"><input type="checkbox" name="q8" value="pipelining"> Request pipelining</label>
+        <label class="choice"><input type="checkbox" name="q8" value="quic"> The QUIC transport</label>
+      </fieldset>
+
+      <fieldset class="question" id="q9">
+        <legend><span class="q-num">9.</span> Which are the benefits of HTTP/3 over QUIC? <span class="q-type">Select all that apply.</span></legend>
+        <label class="choice"><input type="checkbox" name="q9" value="setup"> Faster connection setup (0-RTT / 1-RTT)</label>
+        <label class="choice"><input type="checkbox" name="q9" value="tcp"> It runs over TCP for reliability</label>
+        <label class="choice"><input type="checkbox" name="q9" value="encryption"> Built-in encryption (TLS 1.3)</label>
+        <label class="choice"><input type="checkbox" name="q9" value="ipchange"> Sessions survive an IP address change</label>
+        <label class="choice"><input type="checkbox" name="q9" value="nostatus"> Responses no longer need status codes</label>
+      </fieldset>
+
+      <!-- Q10 is a drop down question -->
+      <fieldset class="question" id="q10">
+        <legend><span class="q-num">10.</span> Drop-down question <span class="q-type">Choose one</span></legend>
+        <p><label for="q10-select">Which part of an HTTP request carries data such as JSON or form fields for POST and PUT?</label></p>
+        <select id="q10-select" name="q10">
+          <option value="">-- Select an answer --</option>
+          <option value="line">The request line</option>
+          <option value="headers">The headers</option>
+          <option value="body">The body</option>
+          <option value="status">The status code</option>
+        </select>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Submit Quiz</button>
+        <button type="button" id="reset-btn" class="btn btn-secondary">Reset Quiz</button>
+      </div>
+    </form>
+
+    <nav class="page-pager" aria-label="Page navigation">
+      <a href="key-concepts.html">&larr; Key Concepts</a>
+      <a href="references.html">References &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>This website is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203 Web Development</a> at Kennesaw State University.</p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

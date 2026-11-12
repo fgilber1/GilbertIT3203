@@ -1,0 +1,108 @@
+/* quiz stylesheet */
+
+:root {
+  --ok: #2b8a3e;      /* correct / pass */
+  --ok-bg: #ebfbee;
+  --bad: #c92a2a;     /* incorrect / fail */
+  --bad-bg: #fff5f5;
+}
+
+/* start screen and results panels */
+.quiz-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--teal);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.quiz-panel h2 { margin-top: 0; }
+.quiz-panel[hidden], #quiz-form[hidden], .status-bar[hidden] { display: none; }
+
+.result-pass { border-top-color: var(--ok); background: var(--ok-bg); }
+.result-fail { border-top-color: var(--bad); background: var(--bad-bg); }
+.result-pass h2 { color: var(--ok); font-size: 2.2rem; border-bottom-color: var(--ok); }
+.result-fail h2 { color: var(--bad); font-size: 2.2rem; border-bottom-color: var(--bad); }
+.result-pass h2 small, .result-fail h2 small { font-size: 1rem; }
+.score-line { font-size: 1.4rem; }
+
+
+.results-table .row-correct td, .results-table .row-correct th { background: var(--ok-bg); }
+.results-table .row-incorrect td, .results-table .row-incorrect th { background: var(--bad-bg); }
+.results-table th[scope="row"] { color: var(--navy); background: #e9eef2; }
+.badge { display: inline-block; padding: 0.1rem 0.7rem; border-radius: 999px; color: #fff; font-weight: bold; font-size: 0.9rem; }
+.badge-ok { background: var(--ok); }
+.badge-bad { background: var(--bad); }
+
+/* progress bar */
+.status-bar {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  background: var(--navy); color: #fff;
+  padding: 0.6rem 1rem; margin-bottom: 1rem;
+  border-radius: 6px; border-bottom: 4px solid var(--orange);
+}
+#timer { font-family: var(--font-code); font-size: 1.2rem; }
+.status-bar.warning { background: var(--bad); }   /* last minute turns red */
+
+/* question cards */
+.question {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--teal);
+  border-radius: 6px;
+  padding: 1rem 1.25rem 1.25rem;
+  margin: 0 0 1.25rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.question legend { font-weight: bold; color: var(--navy); padding: 0 0.5rem; }
+.q-num {
+  display: inline-block; width: 1.8rem; height: 1.8rem; line-height: 1.8rem; text-align: center;
+  background: var(--orange); color: #fff; border-radius: 50%; margin-right: 0.4rem;
+}
+.q-type { font-size: 0.8rem; font-weight: normal; color: var(--muted); background: #e9eef2; border-radius: 999px; padding: 0.1rem 0.6rem; margin-left: 0.4rem; }
+.question p { margin-bottom: 0.6rem; }
+.question.is-correct   { border-left-color: var(--ok); background: var(--ok-bg); }
+.question.is-incorrect { border-left-color: var(--bad); background: var(--bad-bg); }
+
+/* Text input and drop-down */
+.question input[type="text"], .question select {
+  width: 100%; max-width: 28rem;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  border: 2px solid var(--border); border-radius: 4px; background: #fff;
+}
+.question input[type="text"]:focus, .question select:focus {
+  outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(11, 114, 133, 0.25);
+}
+
+/* radio and checkbox choices */
+.choice {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.55rem 0.75rem; margin-bottom: 0.4rem;
+  border: 1px solid var(--border); border-radius: 4px; background: #fff;
+  cursor: pointer; transition: background-color 0.15s, border-color 0.15s;
+}
+.choice:hover { background: #e7f5f8; border-color: var(--teal); }
+.choice:has(input:checked) { background: #d0ebff; border-color: var(--teal); }  /* highlights selected choice */
+.choice input { width: 1.15rem; height: 1.15rem; accent-color: var(--teal); }
+.question input:disabled, .question select:disabled { cursor: not-allowed; }
+.question input[type="text"]:disabled, .question select:disabled { background: #f1f3f5; color: var(--text); }
+
+/* buttons */
+.form-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn {
+  font: inherit; font-weight: bold; cursor: pointer;
+  padding: 0.7rem 1.6rem; border-radius: 4px; border: 2px solid transparent;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.btn-primary { background: var(--teal); color: #fff; }
+.btn-primary:hover { background: var(--teal-dark); }
+.btn-secondary { background: #fff; color: var(--navy); border-color: var(--navy); }
+.btn-secondary:hover { background: #e9eef2; }
+
+@media (max-width: 600px) {
+  .btn { width: 100%; }
+}
