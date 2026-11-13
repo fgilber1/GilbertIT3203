@@ -17,8 +17,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learning-http.html">Learning HTTP</a></li>
-                    <li><a href="http-evolution.html" aria-current="page">HTTP Evolution</a></li>
-                    <li><a href="http-security.html">HTTP Security</a></li>
+                    <li><a href="http-evolution.html">HTTP Evolution</a></li>
+                    <li><a href="http-security.html" aria-current="page">HTTP Security</a></li>
                     <li><a href="key-concepts.html">Key Concepts</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="references.html">References</a></li>
@@ -27,3 +27,30 @@
             </nav>
         </div>
     </header>
+
+    <main id="content">
+        <h1>HTTP Security</h1>
+        <p class="page-intro">The security of Hypertext Transfer Protocol</p>
+
+        <h2>HTTPS</h2>
+        <p>Hypertext Transfer Protocol Secure (HTTPS) is the secure version of HTTP. It increases the security of data transfers by using encryption protocols. The protocol in particular that HTTPS uses is the Transport Layer Security (TLS), which secures communication by using an asymmettic public key infrastructure.</p>
+        <p>The two keys in use:</p>
+        <ul>
+            <li><strong>Private key:</strong> The key is controlled by the owner of a website, and it is kept private. The key lives on a web server and is used to decrypt information encrypted by the public key.</li>
+            <li><strong>Public key:</strong> The key is available to everyone who wants to interact with the server in a secure way. The information that is encrypted by the public key can only be detected by the private key.</li>
+        </ul>
+
+        <h2>Importance of HTTPS</h2>
+        <p>HTTPS prevents websites from having their information broadcast in a way that is easily viewed by anyone looking on the network. Using regular HTTP, the data can easily be found by using free software because the information is broken down into said data. This makes communication over an unsecure medium, such as public WiFi, very vulnerable to being intercepted. In comparison, HTTPS is encrypted when beong used so even if the packets of data are intercepted, the information will not come across plainly.</p>
+        <p>An example of information before and after encryption:</p>
+        <ul>
+            <li><strong>Before encryption:</strong> This is a text that is completely readable</li>
+            <li><strong>After encryption:</strong> ITM0IRyiEhVpa6VnKyExMiEgNveroyWBPLgGyfkflYjDaaFf/Kn3bo3OfghBPDWo6AfSHlNtL8N7ITEwIXc1gU5X73xMsJormzzXlwOyrCs+9XCPk63Y+z0=</li>
+        </ul>
+    </main>
+
+    <footer class="site-footer">
+        <p>This website is for a class project.<a href="https://ksuweb.github.io/IT3203/">IT3203 Web Development</a></p>
+    </footer>
+</body>
+</html>
